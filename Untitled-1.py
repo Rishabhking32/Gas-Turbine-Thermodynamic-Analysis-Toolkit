@@ -29,13 +29,13 @@ import openpyxl
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 
-# Set high-resolution rendering defaults for crisp visualization plots
+# Set high-resolution rendering defaults for visualization plots
 plt.rcParams["figure.dpi"] = 110
 plt.rcParams["savefig.dpi"] = 300
 
 
 # =====================================================================
-# CORE UTILITY HELPERS
+# CORE UTILITY
 # =====================================================================
 def get_terminal_inputs(prompts, defaults):
     """Gathers configuration inputs cleanly via console line parameters."""
@@ -124,7 +124,7 @@ def analyze_single_stage():
     print("CALCULATION PHASE: Processing Thermodynamic Cycle")
     print("=" * 70 + "\n")
 
-    # Core Station Milestones (Actual vs Ideal Parallel Engine)
+    # Core Station (Actual vs Ideal Parallel Engine)
     es = 1.7526e8 * math.exp(-5315.56 / t1)
     density = 3.4848 * (p1 * 1e2 - 0.00376960 * rh * es) * 1e-3 / t1
     v1 = m / density
@@ -154,7 +154,7 @@ def analyze_single_stage():
     qs_reg = (1 + 1 / af_reg) * cpe * (t3 - t5)
 
     # =====================================================================
-    # DIRECT THERMODYNAMIC VECTOR GENERATION (Zero-Index Dependency)
+    # DIRECT THERMODYNAMIC VECTOR GENERATION
     # =====================================================================
     p12_act = np.linspace(p1, p2, resln)
     t12_id = t1 * (p12_act / p1) ** ((gc - 1) / gc)
@@ -702,7 +702,7 @@ def analyze_multi_stage():
     net_work = total_turb_work - total_comp_work
 
     # =================================================================
-    # STATE SUMMARY MATRIX (MULTI-STAGE TERMINAL SUMMARY)
+    # STATE SUMMARY MATRIX
     # =================================================================
     print(f"\n{' RECONFIGURED MULTI-STAGE CYCLE STATION PROFILE ':=^70}")
     print(
