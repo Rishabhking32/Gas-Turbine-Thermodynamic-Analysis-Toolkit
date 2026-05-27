@@ -1,4 +1,3 @@
-
 ### Gas Turbine Thermodynamic Analysis Toolkit
 
 ```
@@ -81,6 +80,7 @@ To evaluate a high-efficiency **Intercooled-Reheat-Regenerative Gas Turbine** co
 * Main Combustor: Firing Limit = `1300 K`, Pressure Loss = `3%`.
 * Turbine Stages: Isentropic Efficiency = `0.86`.
 * Reheater Zone: Reheat Limit = `1250 K`, Pressure Loss = `2%`.
+<img width="4200" height="1950" alt="Multi-Stage_Performance_Overlays" src="https://github.com/user-attachments/assets/00638c3a-5259-45d8-b5a8-aece29fa676a" />
 
 ---
 
