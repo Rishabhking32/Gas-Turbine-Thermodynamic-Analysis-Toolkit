@@ -1,12 +1,10 @@
 
-Gas Turbine Thermodynamic Analysis Toolkit
+### Gas Turbine Thermodynamic Analysis Toolkit
 
 ```
 A high-fidelity thermodynamic simulation and analysis engine written in Python for evaluating single-stage and complex multi-stage gas turbine cycles. This toolkit allows users to model real-world aerothermal behaviors by accounting for component efficiencies, pressure drops, fluid properties variations ($C_p$, $\gamma$), and environmental conditions.
 
 The application generates clear Temperature-Entropy (T-S) and Pressure-Volume (P-V) diagrams overlaid with an isolated, continuous Isentropic Reference Cycle. It also features an automated, formula-driven Excel data export utility to generate professional worksheets for engineering documentation.
-
-
 
 | Key Features
 
@@ -21,8 +19,8 @@ The application generates clear Temperature-Entropy (T-S) and Pressure-Volume (P
 * Safeguarded Numerical Engine: Equipped with isentropic denominator protections to gracefully handle idling stages or pressure ratios of 1.0 without throwing calculation math warnings.
 
 3. High-Resolution Visual Tracking
-* Collision-Free Labeling: Side-by-side $T-s$ and $P-v$ subplots feature split text-offset alignments (`ha`/`va` anchors) to cleanly separate real states `(1, 2...)` from pure states `(1s, 2s...)`.
-* True Isentropes: Ideal compressor and turbine traces maintain perfectly vertical projections ($\Delta s = 0$) regardless of external component friction values.
+* Collision-Free Labeling: Side-by-side T-S and P-V subplots feature split text-offset alignments (ha/va anchors) to cleanly separate real states `(1, 2...)` from pure states `(1s, 2s...)`.
+* True Isentropes: Ideal compressor and turbine traces maintain perfectly vertical projections (Delta s = 0) regardless of external component friction values.
 
 4. Interactive Spreadsheet Writer
 * Live Excel Formulas: The export subsystem uses `openpyxl` to write active Excel equations (e.g., product/difference cell metrics) rather than printing flat numerical strings.
@@ -110,7 +108,6 @@ Untitled-1.py
 
 * **Developer**: Rishabh
 * **Release Date**: May 26, 2026
-* **License**:
 
 ```
 
